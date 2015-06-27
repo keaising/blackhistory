@@ -1,28 +1,24 @@
 ---
-title: about
+title: Part of me
 layout: page
 ---
 
-a
->  Student always | ZheTenger | Microsoft Dog | Coder /On the way
+Now
+>  Still a student | Love unfamiliarity | Microsoft fans | .Net Coder /On my way
 
 
-who involved in 
+Code
 > [github](https://github.com/keaising)
 
-> [gitcafe](https://gitcafe.com/keaising)
-
-> [好孩子写日志](http://blog.shuxiaowang.com)
-
-> [坏孩子画桃符](http://note.shuxiaowang.com)
 
 
-mail 
+Mail
 > keaising##gmail.com
 
 
-or follow 
+Twitter
 > [@冬眠君](https://twitter.com/#!/keaising)
 
+Weibo
+> [@岚山梓](https://weibo.com/asukayui)
 
-to reach me
