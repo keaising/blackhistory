@@ -10,14 +10,9 @@ a
 who involved in 
 > [github](https://github.com/keaising)
 
-> [博客](http://blog.shuxiao.wang)
-
-> [桃符](http://shuxiao.wang)
-
-> [翻译一本书](http://mf.shuxiao.wang)
 
 mail 
-> mail##shuxiao.wang
+> mail##shuxiaowang.com
 
 
 or follow 
