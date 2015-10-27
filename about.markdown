@@ -16,7 +16,7 @@ mail
 
 
 or follow 
-> [@大河萌虎](https://twitter.com/#!/keaising)
+> [@大河萌虎](http://weibo.com/asukayui)
 
 
 to reach me
