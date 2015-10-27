@@ -1,11 +1,11 @@
 markdown: rdiscount
 highlighter: pygments
 permalink: /:year/:month/:day/:title.html
-name: "冬眠君的黑历史"
+name: "大河萌虎的外屋"
 markdown: redcarpet
 #markdown: rdiscount
 
-author: "Shuxiao Wang"
+author: "Taga"
 atom-baseurl: "http://shuxiao.wang"
 disqus: "gopherwood"
 
