@@ -2,7 +2,8 @@
 title: Github Pages中个人页面和项目页面的坑
 layout: post
 guid: 2ef3550f-8cf3-400b-a55b-c512c9af8b2d
-categories: Website
+tags:
+  - Jekyll
 
 ---
 在使用Github和Jekyll建立静态博客的过程中，必须要注意的一点是Github Pages分为两种，个人页面和项目页面:

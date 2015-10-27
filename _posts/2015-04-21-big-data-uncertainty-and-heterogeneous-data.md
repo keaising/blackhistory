@@ -2,7 +2,8 @@
 title: 不确定性数据和异构数据
 layout: post
 guid: 2ef3550f-8cf3-400b-a55b-c512c9af8a2m
-categories: BigData
+tags:
+  - Assignment
 
 ---
 

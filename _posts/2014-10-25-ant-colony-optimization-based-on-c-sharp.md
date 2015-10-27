@@ -2,7 +2,8 @@
 title: 基于C#的蚁群算法实现
 layout: post
 guid: 2ef3550f-8cf3-400b-a55b-c512c9af8b2e
-categories: Assignment
+tags:
+  - Assignment
 
 ---
 

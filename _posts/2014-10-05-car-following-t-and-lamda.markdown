@@ -2,7 +2,8 @@
 title: 两车跟驰模型中的T和Lamda
 layout: post
 guid: 2ef3550f-8cf3-400b-a55b-c512c9af8b2d
-categories: Assignment
+tags:
+  - Assignment
 
 ---
 下面的twobus函数作用是根据特定的T和lamda的值与两车跟驰模型计算得到两车的行驶轨迹x1和x2。

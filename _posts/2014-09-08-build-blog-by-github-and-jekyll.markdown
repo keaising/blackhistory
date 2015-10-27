@@ -2,7 +2,8 @@
 title: Jekyll博客流程
 layout: post
 guid: 2ef3550f-8cf3-400b-a55b-c512c9af8b2d
-categories: Website
+tags:
+  - Jekyll
 
 ---
 来，我们先看两个博客，[rusty shutter](http://lhzhang.com/ "rusty shutter")，[Lucian](http://lucianmarin.com/ "Lucian")，这种4、5年前就建立好，放到现在看却依旧一点都不过时的简约风格博客是否符合你的胃口？如果答案是“是”的话，往下看吧，下面是我博客之魂熊熊燃烧了三天的成果。

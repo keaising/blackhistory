@@ -2,7 +2,8 @@
 title: 对NGSIM数据协方差处理草稿
 layout: post
 guid: 2ef3550f-8cf3-400b-a55b-c512c9af8b2d
-categories: Assignment
+tags:
+  - Assignment
 
 ---
 这是系统辨识课上给的对NGSIM数据处理的一小部分，这部分的   主要作用是对三个.mat文件中的一个进行处理，计算得到前后车速度和加速度的协方差。应该还有bug，我尝试了一下计算前1000行数据，发现无法得到正确的结果，思路仅供参考，debugging...
