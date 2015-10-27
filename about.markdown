@@ -12,11 +12,11 @@ who involved in
 
 
 mail 
-> mail##shuxiaowang.com
+> mail@shuxiao.wang
 
 
 or follow 
-> [@大河萌虎](https://twitter.com/#!/Wsx_xzW)
+> [@大河萌虎](https://twitter.com/#!/keaising)
 
 
 to reach me
