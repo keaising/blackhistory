@@ -7,19 +7,19 @@ tags:
 
 ---
 
-### 引言
+### 0. 引言
 
 在VPS上搭建Shadowsocks翻墙和走IPV6免流量通道的教程如下：[秋水逸冰 - Shadowsocks Python版一键安装脚本](https://teddysun.com/342.html)
 
 需要注意的是可能需要在CentOS上开放防火墙，我的做法是直接关闭了我的防火墙，其实只需要打开Shadowsocks占用的那个端口即可，但是关闭命令更简单嘛，而且我的VPS也仅仅这一个用途所以无所谓了
 
-### IPV4 翻墙教程
+### 1.  IPV4 翻墙教程
 
-#### iOS
+#### 1.1  iOS
 
 复制下面这个链接 http://shuxiao.wang/surge.config 打开Surge，右上角 Edit ，Download Configuration from URL， 粘贴进去，Done！
 
-#### Windows 7/8/8.1/10
+#### 1.2  Windows 7/8/8.1/10
 
 下载这个[Windows客户端](http://7nj21b.com1.z0.glb.clouddn.com/Shadowsocks.rar)，解压缩到一个喜欢的地方，双击Shadowsocks.exe，我已经全部配置好了，开始使用吧。这个软件资源占用较低，可以一直开着。
 
@@ -33,13 +33,13 @@ tags:
 
 3. 端口1080
 
-### IPV6免流量通道
+### 2.  IPV6免流量通道
 
-#### iOS
+#### 2.1  iOS
 
 Surge不支持IPV6，想多了
 
-#### Windows 10
+#### 2.2  Windows 10
 
 先打开Shadowsocks.exe，再打开网络和共享中心，如下图，点击有线网络的「以太网」
 
