@@ -21,17 +21,8 @@ tags:
 
 #### 1.2  Windows 7/8/8.1/10
 
-下载这个[Windows客户端](http://7nj21b.com1.z0.glb.clouddn.com/Shadowsocks.rar)，解压缩到一个喜欢的地方，双击Shadowsocks.exe，我已经全部配置好了，开始使用吧。这个软件资源占用较低，可以一直开着。
+下载这个[Windows客户端](http://7s1qxo.com1.z0.glb.clouddn.com/Shadowsocks.rar)，解压缩到一个喜欢的地方，双击Shadowsocks.exe，我已经全部配置好了，开始使用吧。这个软件资源占用较低，可以一直开着。如果仅仅是翻墙、不需要IPv6的话，也可以右键任务栏小飞机 -> 服务器 -> IPv4
 
-如果提示代理不可用，Windows 10用户可以尝试下面的设置，其他Windows版本我手上没有。。无法测试
-
-开始 -> 设置 -> 网络和Internet -> 代理， 如图填写
-
-1. 使用代理（勾选）
-
-2. 地址： 127.0.0.1
-
-3. 端口1080
 
 ### 2.  IPV6免流量通道
 
