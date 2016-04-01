@@ -11,7 +11,11 @@ tags:
 
 #### 1.1  iOS
 
-复制下面这个链接 ``` http://shuxiao.wang/surge.config ``` 打开Surge，Zuo上角 Edit ，Download Configuration from URL， 粘贴进去，Done！
+复制下面这个链接
+
+http://shuxiao.wang/surge.config
+
+打开Surge，Zuo上角 Edit ，Download Configuration from URL， 粘贴进去，Done！
 
 #### 1.2  Windows 7/8/8.1/10
 
