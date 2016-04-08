@@ -3,7 +3,7 @@ title: 深度学习相关资料
 layout: post
 guid: 2ef3550f-8cf3-400b-a55b-c512c9af8a2c
 tags:
-  - Tutorial
+  - Assignment
 
 ---
 
