@@ -236,3 +236,4 @@ Running findbugs on HelloWorld.class:
 
 ——————
 
+1. **Q：我之前使用过另一本教材「Introduction to Programming in Java」的「introcs.exe」安装器，我还应该使用「algs4.exe」安装器吗？**
