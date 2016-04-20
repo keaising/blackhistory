@@ -39,7 +39,6 @@ tags:
 1. 在上一节中的安装包已经在桌面上创建了DrJava的快捷方式『译者注：如果不慎删掉，还可以在如下目录中找到该程序：C:\Users\Username\algs4』。双击以启动DrJava，如果你收到一个Windows安装警告，点击「允许运行」或者「不禁止」
 
 2. 在DrJava的主窗体中，请向下面一样准确无误得输入[HelloWorld.java](http://introcs.cs.princeton.edu/java/11hello/HelloWorld.java.html)中的代码，哪怕你只是漏掉了一个分号，这个程序也不会运行
-
 {% highlight java %}
 public class HelloWorld {
     public static void main(String[] args) { 
@@ -48,7 +47,7 @@ public class HelloWorld {
 }
 {% endhighlight %}
 
-    在你输入的时候，DrJava会为你准备缩进
+在你输入的时候，DrJava会为你准备缩进
 
 3. 最后，点击「保存」按钮来保存该文件，使用DrJava创建文件夹C:\Users\username\algs4\hello并将文件命名为「HelloWorld.java」，这个文件名是大小写敏感的而且必须匹配Java程序中的类名，其中username是你的Windows用户名
 
