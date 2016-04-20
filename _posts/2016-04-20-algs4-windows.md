@@ -259,6 +259,7 @@ A: 联系一个工作人员，然后检查一下哪儿出问题了
 **Q： 安装器到底做了些什么？**
 
 A: 简而言之就是：下载，安装，配置了Java、DrJava、Checkstyle、Findbugs和教材库，下面是一个更加详细的清单：
+    
     1. 从[java32.zip](http://algs4.cs.princeton.edu/windows/java32.zip)或者[java64.zip](http://algs4.cs.princeton.edu/windows/java64.zip)下载和安装[Java SE 7 Update 67](http://www.oracle.com/technetwork/java/javase/downloads/index.html)，这其中包含了Java Runtime Environment(java.exe)和一部分Java Development Kit(javac.exe and toools.jar)
     
     2. 从[algs4.jar](http://algs4.cs.princeton.edu/code/algs4.jar)下载教材库，并创建好```javac-algs4```和```java-algs4```的包装脚本
@@ -278,6 +279,7 @@ A: 简而言之就是：下载，安装，配置了Java、DrJava、Checkstyle、
 **Q: 我要如何完全卸载 algs4.exe ？
 
 A: 
+    
     1. 删除```C:\Users\username\algs4```文件夹（但是要注意保存你的.java文件）
     
     2. 从你的环境变量的PATH变量中删除下面两个条目：
