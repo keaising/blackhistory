@@ -24,7 +24,7 @@ tags:
 
 ——————
 
-我们提供的安装器将会自动下载、安装和配置你将用到的所有开发环境，包括Java SE 7、DrJava、文本库和命令行工具
+我们提供的安装器将会自动下载、安装和配置你将用到的所有开发环境，包括Java SE 7、DrJava、教材库和命令行工具
 
 +  在电脑上登陆以后你会用来写代码的那个Windows账户，这个账户必须具有管理员权限（Administrator）且电脑必须连接到网络。『译者注：以我的经验，你最好还有一个全局翻墙工具，VPN或者Shadowsocks，不然很有可能下载失败』
 
@@ -236,4 +236,65 @@ Running findbugs on HelloWorld.class:
 
 ——————
 
-1. **Q：我之前使用过另一本教材「Introduction to Programming in Java」的「introcs.exe」安装器，我还应该使用「algs4.exe」安装器吗？**
+**Q：我之前使用过另一本教材「Introduction to Programming in Java」的「introcs.app」安装器，我还应该使用「algs4.exe」安装器吗？**
+
+A: 是的，我们推荐「algs4.exe」安装器是因为「introcs.app」安装器不包含「algs4.jar」库和相应的命令```javac-algs4```和```java-algs4``` 
+
+**Q: 运行安装器时我遇到了访问被拒绝的错误信息，我该怎么办**
+
+A： 确保你使用了一个管理员权限的账户，再重新运行一次安装器。另外，你的机器上可能有加密软件禁止写入```C:\Users\username\AppData\Local```目录，这也可能导致安装器运行失败
+
+**Q：安装器根本不运行，为什么？**
+
+A：这个安装器的运行需要PowerShell。运行Windows Update来升级你的电脑，如果是XP系统，你需要SP3。在XP SP3或者Vista环境下你也可以[手动下载PowerShell2.0](https://support.microsoft.com/en-us/kb/968929)
+
+**Q: 我可以把安装目录设置在C盘以外的驱动器上吗？**
+
+可以，但是你需要自己手动修改参数
+
+**Q: 安装器在我的机器上不工作，怎么办？**
+
+A: 联系一个工作人员，然后检查一下哪儿出问题了
+
+**Q： 安装器到底做了些什么？**
+
+A: 简而言之就是：下载，安装，配置了Java、DrJava、Checkstyle、Findbugs和教材库，下面是一个更加详细的清单：
+    1. 从[java32.zip](http://algs4.cs.princeton.edu/windows/java32.zip)或者[java64.zip](http://algs4.cs.princeton.edu/windows/java64.zip)下载和安装[Java SE 7 Update 67](http://www.oracle.com/technetwork/java/javase/downloads/index.html)，这其中包含了Java Runtime Environment(java.exe)和一部分Java Development Kit(javac.exe and toools.jar)
+    
+    2. 从[algs4.jar](http://algs4.cs.princeton.edu/code/algs4.jar)下载教材库，并创建好```javac-algs4```和```java-algs4```的包装脚本
+    
+    3. 从[checkstyle.zip](http://algs4.cs.princeton.edu/windows/checkstyle.zip)下载并安装[Checkstyle 6.9](http://checkstyle.sourceforge.net/)，并从[checkstyle.xml](http://algs4.cs.princeton.edu/windows/checkstyle.xml)下载checkstyle的配置文件，给```checkstyle-algs4```创建包装脚本
+    
+    4. 从[findbugs.zip](http://algs4.cs.princeton.edu/windows/findbugs.zip)下载和安装[Findbug3.0.1](http://findbugs.sourceforge.net/)，从[findbugs.xml](http://algs4.cs.princeton.edu/windows/findbugs.xml)下载findbugs的配置文件，为```findbugs-algs4```创建包装脚本
+    
+    5. 从[drjava.jar](http://algs4.cs.princeton.edu/windows/drjava.jar)下载最新版本的[DrJava](http://drjava.org/)，为DrJava在桌面上创建一个快捷方式，从[drjava-config.txt](http://algs4.cs.princeton.edu/windows/drjava-config.txt)下载一个DrJava的配置文件到```C:\Users\username\.drjava```，注意，这个操作会覆盖掉任何已经存在的```.drjava```配置文件
+    
+    6. 在环境变量中，将```C:\Users\username\algs4\java\bin```和```C:\Users\username\algs4\bin```添加到用户变量的PATH中
+    
+    7. 定制命令行工具，启用QuickEdit和Insert模式，将Screen Buffer Size设置为800-by-500，在桌面上创建一个命令行的快捷方式
+    
+    8. 通过编译和运行[TestAlgs4.java](http://algs4.cs.princeton.edu/windows/TestAlgs4.java.html)测试是否安装成功
+    
+**Q: 我要如何完全卸载 algs4.exe ？
+
+A: 
+    1. 删除```C:\Users\username\algs4```文件夹（但是要注意保存你的.java文件）
+    
+    2. 从你的环境变量的PATH变量中删除下面两个条目：
+        
+        * C:\Users\username\algs4\bin
+        
+        * C:\Users\username\algs4\bin
+   
+    3. 删除DrJava配置文件```C:\Users\username\.drjava```
+    
+    4. 删除桌面上的DrJava和命令行的快捷方式
+    
+**Q: 我如果重新运行安装器会怎么样？**
+
+A: 重新下载、安装一遍，完全重复上述过程
+
+**Q: 如果我之前在其他位置安装过DrJava会怎么样？**
+
+A: 我们建议你删除他然后使用```C:\Users\username\algs4 ```这个版本
+
