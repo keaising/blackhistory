@@ -143,3 +143,92 @@ Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
 
 ——————
 
+你可以使用```javac```命令来将你的Java代码转化为可以在你的电脑上运行的东西
+
++ 在命令行中，通过```cd```命令导航到包含```HelloWorld.java```的目录下，一般是```C:\Users\username\algs4\hello```，例如：
+
+{% highlight java %}
+C:\Users\username>cd C:\Users\username\algs4\hello
+C:\Users\username\algs4\hello>
+{% endhighlight %}
+
+用```javac```命令进行编译
+
+{% highlight java %}
+C:\Users\username\algs4\hello>javac HelloWorld.java
+C:\Users\username\algs4\hello>
+{% endhighlight %}
+
+如果```HelloWorld.java```在当前目录下的话，你应该没有看到任何报错信息
+
++ 如果用到了我们的标准库，你应该用```javac-algs4```来代替```javac```，例如：如果需要编译[TestAlgs4.java](http://algs4.cs.princeton.edu/windows/TestAlgs4.java.html)，这个程序引用了我们的标准绘图库，你应该这样写命令：
+
+{% highlight java %}
+C:\Users\username\algs4>javac-algs4 TestAlgs4.java
+{% endhighlight %}
+
+『译者注 - start』
+
+同理，如果你需要运行```javac-algs4```编译出来的```.class```文件的话，你也需要使用```java-algs4``` 来运行，而不是使用```java```来运行
+
+『译者注 - end』
+
+——————
+
+## 6. 在命令行中运行程序
+
+——————
+
++ 你需要使用```java```命令来运行你的程序：
+
+{% highlight java %}
+C:\Users\username\algs4\hello>java HelloWorld
+Hello, World
+{% endhighlight %}
+
+你会在输出中看到```Hello, World```
+
++　如果你想使用教科书提供的库的话，需要用```java-algs4``` 来替代```java```，例如，在测试标准绘图和标准音频时你可以使用下面两条命令：
+
+『译者注：使用之前需要注意！！！第一条命令是标准绘图，随便使用；第二条命令是标准音频，使用之后麦克风会开始播放奇怪的声音，请先调小音量，运行之后如果需要停止运行，除了直接关闭命令行窗口外，你还可以使用Ctrl+C的组合键来关闭这个运行』
+
+{% highlight java %}
+C:\Users\username\algs4\hello>java-algs4 edu.princeton.cs.algs4.StdDraw
+[ displays a graphics window with some geometric shapes and text ]
+
+C:\Users\username\algs4\hello>java-algs4 edu.princeton.cs.algs4.StdAudio
+[ plays an A major scale ]
+{% endhighlight %}
+
+——————
+## 7. 检查风格和查找bug
+
+你可以使用检查缝合查找bug两个工具来核查你的代码风格并检查一些简单的bug
+
++ 在命令行中可以这样使用检查风格功能：
+
+{% highlight java %}
+C:\Users\username\algs4\hello>checkstyle-algs4 HelloWorld.java
+Running checkstyle on HelloWorld.java:
+Starting audit...
+Audit done.
+{% endhighlight %}
+
+下面是一张可以检查的清单，你可以自定义这个风格检查，自定义的方法是编辑这个文件：```C:\Users\username\algs4\checkstyle-6.9\checkstyle.xml```
+
++ 在命令行中可以这样使用查找bug功能
+
+{% highlight java %}
+C:\Users\username\algs4\hello>findbugs-algs4 HelloWorld.class
+Running findbugs on HelloWorld.class:
+{% endhighlight %}
+
+下面是一张可以检查的清单，你可以自定义这个bug检查，自定义的方法是编辑这个文件：```C:\Users\username\algs4\findbugs-3.0.1\findbugs.xml```
+
+
+——————
+
+## 常见问题
+
+——————
+
