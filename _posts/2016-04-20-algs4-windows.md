@@ -53,9 +53,9 @@ tags:
 
 现在我们来将你的Java代码转化为可以在你的电脑上运行的东西，点击「编译」按钮（Compile），如果一切顺利的话，你会在DrJava底部的编译器输出窗格（Compiler Output Pane）看到这样一条信息
 
-  {% highlight java %}
-  Compilation completed.
-  {% endhighlight %}
+{% highlight java %}
+Compilation completed.
+{% endhighlight %}
 
 如果DrJava没有编译成功，你应该是输入错了一些东西，重新仔细检查你的代码，你可以用编译器输出窗格中的信息作为参考
 
@@ -78,3 +78,8 @@ Hello, World
 {% endhighlight %}
 
 + 你或许会在成功运行前重复很多遍「编辑 - 编译 - 运行」的循环
+
+## 
+
+## 4. 命令行界面
+
