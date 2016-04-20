@@ -104,3 +104,42 @@ Hello, World
 
 ——————
 
+命令行工具提供了DrJava中也有的功能，包括重定向和管道。你将在「命令行工具」中输入你的指令
+
++ 安装器在桌面上创建了一个命令行工具（Command Prompt），双击以启动命令行，你将会看到类似于这样的消息：
+
+{% highlight java %}
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\username>
+{% endhighlight %}
+
++ 首先确认一下Java编译器已经被正确安装，在命令行中输入```javac -version```并确保输出内容跟下面一样
+
+{% highlight java %}
+C:\Users\username>javac -version
+javac 1.7.0_67
+{% endhighlight %}
+
++ 其次确认一下Java解释器被正确安装，在命令行中输入```java -version```并确保输出内容跟下面一样
+
+{% highlight java %}
+C:\Users\username>java -version
+java version "1.7.0_67"
+Java(TM) SE Runtime Environment (build 1.7.0_67-b01)
+Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)
+{% endhighlight %}
+
+如果你的机器是32位的，那么最后一行的内容应该是
+
+{% highlight java %}
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+{% endhighlight %}
+
+——————
+
+## 5. 在命令行中编译程序
+
+——————
+
