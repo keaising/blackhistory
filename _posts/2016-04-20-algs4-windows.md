@@ -50,3 +50,31 @@ tags:
 *  最后，点击「保存」按钮来保存该文件，使用DrJava创建文件夹C:\Users\username\algs4\hello并将文件命名为「HelloWorld.java」，这个文件名是大小写敏感的而且必须匹配Java程序中的类名，其中username是你的Windows用户名
 
 ## 2. 在DrJava中编译程序
+
+现在我们来将你的Java代码转化为可以在你的电脑上运行的东西，点击「编译」按钮（Compile），如果一切顺利的话，你会在DrJava底部的编译器输出窗格（Compiler Output Pane）看到这样一条信息
+
+  {% highlight java %}
+  Compilation completed.
+  {% endhighlight %}
+
+如果DrJava没有编译成功，你应该是输入错了一些东西，重新仔细检查你的代码，你可以用编译器输出窗格中的信息作为参考
+
+## 3. 在DrJava中运行程序
+
+现在来运行你的程序，这是很有趣的部分
+
++ 在底部的交互窗格（Interactions pane）中输入下列信息，按照习惯，我们高亮了你用粗体输入的部分『译者注：由于博客模板限制我没办法在我这里加粗相应内容，需要看加粗的去看原文吧』
+
+{% highlight java %}
+  > java HelloWorld
+{% endhighlight %}
+  
+如果一切顺利，你会看到如下信息：
+
+{% highlight java %}
+Welcome to DrJava.  Working directory is C:\Users\username\algs4\hello
+> java HelloWorld 
+Hello, World
+{% endhighlight %}
+
++ 你或许会在成功运行前重复很多遍「编辑 - 编译 - 运行」的循环
