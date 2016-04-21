@@ -300,3 +300,56 @@ A: 重新下载、安装一遍，完全重复上述过程
 
 A: 我们建议你删除他然后使用```C:\Users\username\algs4 ```这个版本
 
+**Q: 我可以使用其他版本的Java 吗？**
+
+A: 是的，但你需要自行配置Windows环境变量和DrJava的编译器属性
+
+**Q: 我可以使用除了DrJava以外的IDE吗？**
+
+A: 是的，你可以使用其他的IDE（比如Eclipse）但你需要自己配置编译器属性，比如classpath
+
+**Q: 当我启动Eclipse时，我收到这样一个报错信息“Failed to load JNI shared library”，我该怎么办？**
+
+A: 你多半是使用了一个64位的Java和32位的Eclipse。如果你是64位的机器，安装器会自动安装64位的Java，这会替代之前的32位版本的Java。有两种方法解决这个问题：要么将Eclipse升级到64位，要么将```C:\Users\username\introcs\java```移除，这样的话Windows就会使用之前的32位Java。当然你可以可以在[Eclipse.ini](http://wiki.eclipse.org/Eclipse.ini)中指定使用特定的Java版本
+
+**Q: 我要怎么中断一个无限循环？**
+
+A: 在DrJava中，直接点击Reset按钮即可或者在菜单里选择```Tools->Reset Interactions```，如果是在命令行里面的话，使用```Ctrl+C```
+
+**Q: 当使用标准输入时，我要怎么表明输入完成（没有后续数据了）**
+
+A: 如果你是从键盘输入的话，使用```Ctrl+z```表示文件结尾（EOF）
+
+**Q: 在Windows中要怎么显示 .java 和 .class 的后缀名？**
+
+A: 在很多Windows系统中后缀名都被隐藏了，在这种情况下，这样打开他，选择```Start -> My Computer -> Tools -> Folder Options -> View```，取消对```Hide file extensions for known file types```选项的选中状态，确认退出即可
+
+**Q: 当我在命令行输入```java -version```和```javac -version```时报错了，我该怎么办？**
+
+A: 首先确认这两个文件存在：
+
+    C:\Users\username\algs4\java\bin\javac.exe
+
+    C:\Users\username\algs4\java\bin\java.exe
+
+如果存在的话，应该是环境变量中PATH的值不对，在命令行中输入下面一句：
+
+    C:\Users\username> echo %PATH%
+    
+PATH环境变量应该包含```C:\Users\username\algs4\java\bin```
+
+**Q: 当我在命令行中编译或者运行一个引用了教材库的程序时报错了，为什么？**
+
+A: 注意要使用```javac-algs4```和```java-algs4```而不是```javac```或者```java```
+
+**Q: 在命令行中我应该如何导航到另一个驱动器？**
+
+A: 在命令行中，用```H:```导航到H盘，用```cd```导航到当前驱动器的其他文件夹
+
+**Q: 我该如何学习更多与命令行有关的知识？**
+
+A: 微软提供了一个[命令行知识库](https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntcmds.mspx?mfr=true)
+
+**Q: 我是否可以用Windows PowerShell来替代命令行？**
+
+A: PowerShell是一个比命令行更高级的命令行工具，但是，它现在还不支持重定向标准输入
