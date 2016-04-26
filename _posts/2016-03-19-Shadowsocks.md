@@ -7,9 +7,7 @@ tags:
 
 ---
 
-### 1.  IPV4 翻墙教程
-
-#### 1.1  iOS
+### 1  iOS Surge
 
 复制下面这个链接
 
@@ -17,16 +15,55 @@ http://shuxiao.wang/surge.config
 
 打开Surge，Zuo上角 Edit ，Download Configuration from URL， 粘贴进去，Done！
 
-#### 1.2  Windows 7/8/8.1/10
+#### 2 iOS Shadowrocket
 
-下载这个[Windows客户端](http://7s1qxo.com1.z0.glb.clouddn.com/Shadowsocks.rar)，解压缩到一个喜欢的地方，双击Shadowsocks.exe，我已经全部配置好了，开始使用吧。这个软件资源占用较低，可以一直开着。如果仅仅是翻墙、不需要IPv6的话，也可以右键任务栏小飞机 -> 服务器 -> IPv4
+6块钱购买Shadowrocket或者去Twitter[@ShadowRocketApp](https://twitter.com/shadowrocketapp)参与[TestFlight](https://docs.google.com/forms/d/115OwGBkww8-pUmW4xcH00c1103_wtLCfUBZjhzVqEqY/viewform)内测，需要填写你的AppleID和TwitterID，我更建议购买，TestFlight计划随时可能结束而且每个Build只有60天使用时间
+
+点击右上角「+」添加一个配置文件，填写内容如下，密码问我要
+
+![ShadowRocketConfig]({{ site.baseurl }}/media/files/2016/03/ShadowRocketConfig.png)
+
+然后退回主界面，点击「Setting」 -> 「Config」，在「Remote Files」里面填写 http://shuxiao.wang/surge.config 
+
+退回主界面，点击Not Conneted右边那个按钮，会提示是否允许建立VPN之类的，点击允许，就可以开始使用了
+
+我一般是将ShadowsockRocket的插件添加到通知栏中，这样可以比较方便得打开和关闭，同时可以看到即时流速
+
+![ShadowRocketNotice]({{ site.baseurl }}/media/files/2016/03/ShadowRocketNotice.png)
 
 
-### 2.  IPV6免流量通道
+#### 3  Windows 7/8/8.1/10
 
-#### 2.1  iOS
+请按照自己的需求下载Windows客户端：
 
-Surge不支持IPV6，想多了
++ Windows 7 - IPv4 翻墙：[Windows7.IPv4]({{ site.baseurl }}/software/Windows7.IPv4.rar)
+
++ Windows 7 - IPv6 免流量/翻墙：[Windows7.IPv6]({{ site.baseurl }}/software/Windows7.IPv6.rar)
+
++ Windows 8、8.1、10 - IPv4 翻墙：[Windows10.IPv4]({{ site.baseurl }}/software/Windows10.IPv4.rar)
+
++ Windows 8、8.1、10 - IPv6 免流量/翻墙：[Windows7.IPv4]({{ site.baseurl }}/software/Windows10.IPv6.rar)
+
+解压缩到一个喜欢的地方，双击Shadowsocks.exe，就可以开始使用了
+
+如果你只有IPv4环境的话（比如校内无线上网、家里宽带、校外上网），选择IPv4版本，此时只能翻墙。确认自己有IPv6环境（比如校内用有线上网），可以使用IPv6版本免流量且翻墙。
+
+需要注意的一点是Windows7版本需要.Net3.5，Windows7系统应该是内置了所以没有问题，Windows8、8.1、10的用户尽量下载Windows10版本，避免遇到安装.Net3.5的问题。
+
+同一系统版本的IPv4和IPv6版本其实完全一致，只是默认设置有一点区别，需要切换的时候右键任务栏小飞机 -> 服务器，选择IPv4或者IPv6即可。
+
+
+### 4 Android
+
+只测试了原生Android和魅族的Flyme5.0以上系统，其他机型请仿照
+
+先下载[Android版Shadowsocks]({{ site.baseurl }}/software/shadowsocks.apk)到手机上，安装，需要什么权限就给什么权限，安装好之后配置如图：
+
+![AndroidSetting]({{ site.baseurl }}/media/files/2016/03/AndroidSetting.png)
+
+配置好之后，点击右上角小飞机或者云朵就可以开始使用了
+
+<--
 
 #### 2.2  Windows 10
 
@@ -48,8 +85,9 @@ Surge不支持IPV6，想多了
 
 但是，如果是已经使用了IPV6免流量，需要回到学校内部网络访问学校资源（比如图书馆、MIS系统和PT），这时你要做两件事：1. 选中IPV4的勾，确认保存； 2. 右下角右键关闭Shadowsocks
 
-教程比较简单，有其他问题请直接咨询我 (*^__^*) 
+教程比较简单，有其他问题请直接咨询我 (*^__^*)
 
+ -->
 
 ### 0. 结语
 
