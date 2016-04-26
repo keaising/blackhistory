@@ -7,7 +7,7 @@ tags:
 
 ---
 
-### 1  iOS Surge
+### 1.  iOS Surge
 
 复制下面这个链接
 
@@ -15,7 +15,7 @@ http://shuxiao.wang/surge.config
 
 打开Surge，Zuo上角 Edit ，Download Configuration from URL， 粘贴进去，Done！
 
-#### 2 iOS Shadowrocket
+### 2. iOS Shadowrocket
 
 6块钱购买Shadowrocket或者去Twitter[@ShadowRocketApp](https://twitter.com/shadowrocketapp)参与[TestFlight](https://docs.google.com/forms/d/115OwGBkww8-pUmW4xcH00c1103_wtLCfUBZjhzVqEqY/viewform)内测，需要填写你的AppleID和TwitterID，我更建议购买，TestFlight计划随时可能结束而且每个Build只有60天使用时间
 
@@ -32,7 +32,7 @@ http://shuxiao.wang/surge.config
 ![ShadowRocketNotice]({{ site.baseurl }}/media/files/2016/03/ShadowRocketNotice.png)
 
 
-#### 3  Windows 7/8/8.1/10
+### 3.  Windows 7/8/8.1/10
 
 请按照自己的需求下载Windows客户端：
 
@@ -53,17 +53,17 @@ http://shuxiao.wang/surge.config
 同一系统版本的IPv4和IPv6版本其实完全一致，只是默认设置有一点区别，需要切换的时候右键任务栏小飞机 -> 服务器，选择IPv4或者IPv6即可。
 
 
-### 4 Android
+### 4. Android
 
 只测试了原生Android和魅族的Flyme5.0以上系统，其他机型请仿照
 
 先下载[Android版Shadowsocks]({{ site.baseurl }}/software/shadowsocks.apk)到手机上，安装，需要什么权限就给什么权限，安装好之后配置如图：
 
-![AndroidSetting]({{ site.baseurl }}/media/files/2016/03/AndroidSetting.png)
+![AndroidSetting]({{ site.baseurl }}/media/files/2016/03/AndroidSetting.jpg)
 
 配置好之后，点击右上角小飞机或者云朵就可以开始使用了
 
-<--
+<!--
 
 #### 2.2  Windows 10
 
