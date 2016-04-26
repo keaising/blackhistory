@@ -42,7 +42,7 @@ http://shuxiao.wang/surge.config
 
 + Windows 8、8.1、10 - IPv4 翻墙：[Windows10.IPv4]({{ site.baseurl }}/software/Windows10.IPv4.rar)
 
-+ Windows 8、8.1、10 - IPv6 免流量/翻墙：[Windows7.IPv6]({{ site.baseurl }}/software/Windows10.IPv6.rar)
++ Windows 8、8.1、10 - IPv6 免流量/翻墙：[Windows10.IPv6]({{ site.baseurl }}/software/Windows10.IPv6.rar)
 
 解压缩到一个喜欢的地方，双击Shadowsocks.exe，就可以开始使用了
 
