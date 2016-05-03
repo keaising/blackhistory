@@ -36,28 +36,22 @@ http://shuxiao.wang/surge.config
 
 请按照自己的需求下载Windows客户端：
 
-+ Windows 7 - IPv4 翻墙：[Windows7.IPv4]({{ site.baseurl }}/software/Windows7.IPv4.rar)
++ Windows 7 ：[Windows7.IPv4]({{ site.baseurl }}/software/Windows7.IPv4.rar)
 
-+ Windows 7 - IPv6 免流量/翻墙：[Windows7.IPv6]({{ site.baseurl }}/software/Windows7.IPv6.rar)
-
-+ Windows 8、8.1、10 - IPv4 翻墙：[Windows10.IPv4]({{ site.baseurl }}/software/Windows10.IPv4.rar)
-
-+ Windows 8、8.1、10 - IPv6 免流量/翻墙：[Windows10.IPv6]({{ site.baseurl }}/software/Windows10.IPv6.rar)
++ Windows 8、8.1、10 ：[Windows10.IPv4]({{ site.baseurl }}/software/Windows10.IPv4.rar)
 
 解压缩到一个喜欢的地方，双击Shadowsocks.exe，就可以开始使用了
 
-如果你只有IPv4环境的话（比如校内无线上网、家里宽带、校外上网），选择IPv4版本，此时只能翻墙。确认自己有IPv6环境（比如校内用有线上网），可以使用IPv6版本免流量且翻墙。
-
 需要注意的一点是Windows7版本需要.Net3.5，Windows7系统应该是内置了所以没有问题，Windows8、8.1、10的用户尽量下载Windows10版本，避免遇到安装.Net3.5的问题。
 
-同一系统版本的IPv4和IPv6版本其实完全一致，只是默认设置有一点区别，需要切换的时候右键任务栏小飞机 -> 服务器，选择IPv4或者IPv6即可。
+
 
 
 ### 4. Android
 
 只测试了原生Android和魅族的Flyme5.0以上系统，其他机型请仿照
 
-先下载[Android版Shadowsocks]({{ site.baseurl }}/software/shadowsocks.apk)到手机上，安装，需要什么权限就给什么权限，安装好之后配置如图：
+先下载[Android版Shadowsocks]({{ site.baseurl }}/software/shadowsocks.apk)到手机上，安装，需要什么权限就给什么权限，安装好之后配置如图：密码问我要
 
 ![AndroidSetting]({{ site.baseurl }}/media/files/2016/03/AndroidSetting.jpg)
 
@@ -93,6 +87,6 @@ http://shuxiao.wang/surge.config
 
 （这部分不用看，不影响使用
 
-在VPS上搭建Shadowsocks翻墙和走IPV6免流量通道的教程如下：[秋水逸冰 - Shadowsocks Python版一键安装脚本](https://teddysun.com/342.html)
+在VPS上搭建Shadowsocks的教程如下：[秋水逸冰 - Shadowsocks Python版一键安装脚本](https://teddysun.com/342.html)
 
 需要注意的是可能需要在CentOS上开放防火墙，我的做法是直接关闭了我的防火墙，其实只需要打开Shadowsocks占用的那个端口即可，但是关闭命令更简单嘛，而且我的VPS也仅仅这一个用途所以无所谓了
