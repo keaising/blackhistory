@@ -12,7 +12,7 @@ who involved in
 
 
 mail 
-> mail@shuxiao.wang
+> mail@shuxiaowang.com
 
 
 or follow 
