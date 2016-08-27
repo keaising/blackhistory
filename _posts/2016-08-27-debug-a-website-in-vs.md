@@ -36,7 +36,7 @@ IIS与Windows版本绑定，对应关系表参见 [Internet Information Services
 
  3. 配置信息如下，其中，网站名称随便填，物理路径要选择网站所有位置，主机名选择一个域名，反正都是host在本地，所以只要填一个合法的域名然后用SwitchHost把这个域名指向127.0.0.1即可
 
- ![IIS新建网站-配置]({{ site.baseurl }}/media/files/2016/08/IIS新建网站-配置.png)
+ ![IIS新建网站-配置]({{ site.baseurl }}/media/files/2016/08/IIS添加网站2.png)
 
  4. 注意，这里有两个我忽略的点，一个是修改host，将上面填写的域名指向本机，这个用SwitchHost可以很容易做到，另一个是身份验证，如果你访问了域名——比如我这里是viper.shuxiao.wang——发现只加载了html，没有加载js、css，而且httpcode是401的话，你多半是遇到了身份验证问题，这个问题我将在「网站host到IIS无法访问js和css」中讲，这是三种情况中的一种
 
