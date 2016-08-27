@@ -32,7 +32,7 @@ IIS与Windows版本绑定，对应关系表参见 [Internet Information Services
 
  2. 打开IIS，添加网站
 
- ![IIS新建网站]({{ site.baseurl }}/media/files/2016/08/IIS新建网站.png)
+ ![IIS新建网站]({{ site.baseurl }}/media/files/2016/08/IIS新建网站.PNG)
 
  3. 配置信息如下，其中，网站名称随便填，物理路径要选择网站所有位置，主机名选择一个域名，反正都是host在本地，所以只要填一个合法的域名然后用SwitchHost把这个域名指向127.0.0.1即可
 
@@ -50,7 +50,7 @@ IIS与Windows版本绑定，对应关系表参见 [Internet Information Services
 
 2. 附加进程：VS -> DEBUG -> Attach to Process 
 
- ![attach]({{ site.baseurl }}/media/files/2016/08/attach.png) 
+ ![attach]({{ site.baseurl }}/media/files/2016/08/attach.PNG) 
 
 3. 附加到进程，如下图
 
