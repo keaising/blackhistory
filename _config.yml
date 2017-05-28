@@ -4,6 +4,7 @@ permalink: /:year/:month/:day/:title.html
 name: "大河萌虎的外屋"
 markdown: kramdown
 #markdown: rdiscount
+future: true
 
 author: "Taga"
 atom-baseurl: "http://shuxiao.wang"
