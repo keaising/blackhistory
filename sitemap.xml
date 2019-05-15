@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://shuxiao.wang/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/blog/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/blog/cli-in-csharp3/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/tags/csharp/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/categories/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/tags/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/tags/dotnet-core/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/categories/programming/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/blog/cli-in-csharp2/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/blog/cli-in-csharp1/</loc>
+    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+  </url>
+  
+</urlset>
