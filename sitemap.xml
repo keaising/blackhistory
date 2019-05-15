@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://shuxiao.wang/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <loc>http://shuxiao.wang/blog/</loc>
+    <lastmod>2019-05-15T21:37:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shuxiao.wang/blog/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <loc>http://shuxiao.wang/</loc>
+    <lastmod>2019-05-15T21:36:51+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/blog/cli-in-csharp3/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://shuxiao.wang/tags/csharp/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-05-15T21:38:15+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/categories/</loc>
-    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
+    <lastmod>2019-05-15T21:38:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/tags/</loc>
-    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
+    <lastmod>2019-05-15T21:38:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/tags/cli-in-csharp/</loc>
+    <lastmod>2019-05-15T21:38:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/tags/dotnet-core/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <lastmod>2019-05-15T21:38:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/categories/programming/</loc>
-    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
+    <lastmod>2019-05-15T21:38:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/blog/cli-in-csharp2/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <lastmod>2019-05-15T21:38:06+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/blog/cli-in-csharp1/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <lastmod>2019-05-15T21:37:53+08:00</lastmod>
   </url>
   
   <url>
