@@ -25,13 +25,13 @@
   
   <url>
     <loc>http://shuxiao.wang/categories/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://shuxiao.wang/tags/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -43,7 +43,7 @@
   
   <url>
     <loc>http://shuxiao.wang/categories/programming/</loc>
-    <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -55,6 +55,28 @@
   <url>
     <loc>http://shuxiao.wang/blog/cli-in-csharp1/</loc>
     <lastmod>2019-05-15T19:43:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/tags/translation/</loc>
+    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/tags/tutorial/</loc>
+    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/blog/algs4-eclipse/</loc>
+    <lastmod>2019-05-15T20:56:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://shuxiao.wang/blog/algs4-windows/</loc>
+    <lastmod>2019-05-15T21:14:41+08:00</lastmod>
   </url>
   
 </urlset>
