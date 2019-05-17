@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://shuxiao.wang/blog/</loc>
+    <loc>http://shuxiao.wang/posts/</loc>
     <lastmod>2019-05-16T09:22:42+08:00</lastmod>
   </url>
   
@@ -13,7 +13,7 @@
   </url>
   
   <url>
-    <loc>http://shuxiao.wang/blog/cli-app-in-csharp3/</loc>
+    <loc>http://shuxiao.wang/posts/cli-app-in-csharp3/</loc>
     <lastmod>2019-05-16T20:28:38+08:00</lastmod>
   </url>
   
@@ -48,12 +48,12 @@
   </url>
   
   <url>
-    <loc>http://shuxiao.wang/blog/cli-app-in-csharp2/</loc>
+    <loc>http://shuxiao.wang/posts/cli-app-in-csharp2/</loc>
     <lastmod>2019-05-16T09:28:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shuxiao.wang/blog/cli-app-in-csharp1/</loc>
+    <loc>http://shuxiao.wang/posts/cli-app-in-csharp1/</loc>
     <lastmod>2019-05-16T09:28:08+08:00</lastmod>
   </url>
   
@@ -70,12 +70,12 @@
   </url>
   
   <url>
-    <loc>http://shuxiao.wang/blog/algs4-eclipse/</loc>
+    <loc>http://shuxiao.wang/posts/algs4-eclipse/</loc>
     <lastmod>2019-05-16T09:22:42+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shuxiao.wang/blog/algs4-windows/</loc>
+    <loc>http://shuxiao.wang/posts/algs4-windows/</loc>
     <lastmod>2019-05-16T09:22:42+08:00</lastmod>
   </url>
   
@@ -86,7 +86,7 @@
   </url>
   
   <url>
-    <loc>http://shuxiao.wang/blog/ant-algs-based-on-csharp/</loc>
+    <loc>http://shuxiao.wang/posts/ant-algs-based-on-csharp/</loc>
     <lastmod>2019-05-16T20:33:16+08:00</lastmod>
   </url>
   

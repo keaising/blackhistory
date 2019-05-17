@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>programming on 流水沉微</title>
-    <link>http://shuxiao.wang/categories/programming/</link>
-    <description>Recent content in programming on 流水沉微</description>
+    <title>Posts on 流水沉微</title>
+    <link>http://shuxiao.wang/posts/</link>
+    <description>Recent content in Posts on 流水沉微</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy;keaising 2014 - 2019</copyright>
-    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://shuxiao.wang/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://shuxiao.wang/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

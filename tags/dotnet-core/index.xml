@@ -14,28 +14,28 @@
     
     <item>
       <title>CLI App in C# 其三</title>
-      <link>http://shuxiao.wang/blog/cli-app-in-csharp3/</link>
+      <link>http://shuxiao.wang/posts/cli-app-in-csharp3/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://shuxiao.wang/blog/cli-app-in-csharp3/</guid>
+      <guid>http://shuxiao.wang/posts/cli-app-in-csharp3/</guid>
       <description>这是 CLI App in C# 系列的第三篇，本篇主要介绍gen的打包和发布。 .Net Core控制台应用的打包方法主要是两类：</description>
     </item>
     
     <item>
       <title>CLI App in C# 其二</title>
-      <link>http://shuxiao.wang/blog/cli-app-in-csharp2/</link>
+      <link>http://shuxiao.wang/posts/cli-app-in-csharp2/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://shuxiao.wang/blog/cli-app-in-csharp2/</guid>
+      <guid>http://shuxiao.wang/posts/cli-app-in-csharp2/</guid>
       <description>这是 CLI App in C# 系列的第二篇，本篇主要介绍gen的开发过程。 新建项目 在合适的地方使用dotnet new console -n g</description>
     </item>
     
     <item>
       <title>CLI App in C# 其一</title>
-      <link>http://shuxiao.wang/blog/cli-app-in-csharp1/</link>
+      <link>http://shuxiao.wang/posts/cli-app-in-csharp1/</link>
       <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://shuxiao.wang/blog/cli-app-in-csharp1/</guid>
+      <guid>http://shuxiao.wang/posts/cli-app-in-csharp1/</guid>
       <description>这是 CLI App in C# 系列的第一篇 写这个系列的目的是介绍用C#写一个命令行工具的所有内容，从规划、选型、编码、</description>
     </item>
     
