@@ -95,9 +95,9 @@
 
     
     <div class="float-md-right">
-      <span title="Lastmod: 2019-05-16. Published at: 2019-05-14.">
+      <span title="Lastmod: 2019-05-17. Published at: 2019-05-14.">
         
-          Lastmod: 2019-05-16
+          Lastmod: 2019-05-17
         
       </span>
     </div>
@@ -258,6 +258,109 @@
 <div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">dotnet</span> <span class="n">tool</span> <span class="n">install</span> <span class="p">-</span><span class="n">-global</span> <span class="n">gen</span> <span class="p">-</span><span class="n">-version</span> <span class="n">1</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span></code></pre></div>
 <p>可以看出，nuget包安装dotnet core global tool的工具相对来说比较简单，而且在打包的时候也比较简单，不用考虑跨平台的问题，dotnet core SDK会自动处理好。</p>
 
+<h2 id="打包脚本">打包脚本</h2>
+
+<p>每次打包过程都需要输入一系列命令，其实可以将这一系列命令都包装成一个脚本文件，好处有两点</p>
+
+<ol>
+<li>每次只需要运行脚本即可完成任务</li>
+<li>将打包过程固化，不用再写文档也不怕忘记</li>
+</ol>
+
+<p>powershell的打包脚本如下，bash脚本类似，只需要修改几个特有的命令即可</p>
+
+<ul>
+<li>1-5行 定义了后续要使用的路径</li>
+<li>7-11行 从项目中获取版本号信息</li>
+<li>step 0 对项目进行clean和restore</li>
+<li>step 1 发布exe</li>
+<li>step 2 打包成单文件</li>
+<li>step 3 打包nuget</li>
+<li>step 4 将生成的文件压缩成一个zip，并删除中间文件夹</li>
+<li>step 5 并没有什么实际用途</li>
+</ul>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nv">$ResultPath</span> <span class="p">=</span> <span class="s1">&#39;pakcages&#39;</span>
+<span class="nv">$exePath</span> <span class="p">=</span> <span class="s1">&#39;bin/Release/gen&#39;</span> 
+<span class="nv">$nugetPath</span> <span class="p">=</span> <span class="s1">&#39;bin/Release&#39;</span>
+<span class="nv">$genExe</span> <span class="p">=</span> <span class="s1">&#39;gen.csproj&#39;</span>
+<span class="nv">$genNuget</span> <span class="p">=</span> <span class="s1">&#39;gen-nuget.csproj&#39;</span>
+
+<span class="nv">$xml</span> <span class="p">=</span> <span class="no">[Xml]</span> <span class="p">(</span><span class="nb">Get-Content</span> <span class="nv">$genExe</span><span class="p">)</span>
+<span class="nv">$version</span> <span class="p">=</span> <span class="no">[Version]</span> <span class="nv">$xml</span><span class="p">.</span><span class="n">Project</span><span class="p">.</span><span class="n">PropertyGroup</span><span class="p">.</span><span class="n">Version</span>
+<span class="nv">$zip</span> <span class="p">=</span> <span class="s1">&#39;gen-v&#39;</span> <span class="p">+</span> <span class="nv">$version</span> <span class="p">+</span> <span class="s1">&#39;.zip&#39;</span>
+<span class="nv">$genExeName</span> <span class="p">=</span> <span class="s1">&#39;gen.&#39;</span> <span class="p">+</span> <span class="nv">$version</span> <span class="p">+</span> <span class="s1">&#39;.exe&#39;</span>
+<span class="nv">$genNugetName</span> <span class="p">=</span> <span class="s1">&#39;gen.&#39;</span> <span class="p">+</span><span class="nv">$version</span> <span class="p">+</span> <span class="s1">&#39;.nupkg&#39;</span>
+
+<span class="n">write</span> <span class="s1">&#39;&gt;&gt;&gt; 0. clean and restore &lt;&lt;&lt;&#39;</span>
+<span class="n">dotnet</span> <span class="n">clean</span> <span class="n">-o</span> <span class="nv">$exePath</span> <span class="nv">$genExe</span>
+<span class="n">rm</span> <span class="s1">&#39;obj&#39;</span> <span class="n">-Force</span> <span class="n">-Recurse</span>
+<span class="n">dotnet</span> <span class="n">restore</span> <span class="nv">$genExe</span>
+
+<span class="n">write</span> <span class="s1">&#39;&gt;&gt;&gt; 1. dotnet publish &lt;&lt;&lt;&#39;</span>
+<span class="n">dotnet</span> <span class="n">publish</span> <span class="n">-r</span> <span class="n">win10-x64</span> <span class="p">-</span><span class="n">-self-contained</span> <span class="n">true</span> <span class="n">-c</span> <span class="n">Release</span> <span class="n">-o</span> <span class="nv">$exePath</span> <span class="nv">$genExe</span>
+
+<span class="n">write</span> <span class="s1">&#39;&gt;&gt;&gt; 2. warp-packer package &lt;&lt;&lt;&#39;</span>
+<span class="n">warp-packer</span> <span class="p">-</span><span class="n">-arch</span> <span class="n">windows-x64</span> <span class="p">-</span><span class="n">-input_dir</span> <span class="nv">$exePath</span> <span class="p">-</span><span class="n">-exec</span> <span class="n">gen</span><span class="p">.</span><span class="n">exe</span> <span class="p">-</span><span class="n">-output</span> <span class="p">(</span><span class="nv">$nugetPath</span> <span class="p">+</span> <span class="s1">&#39;/&#39;</span> <span class="p">+</span> <span class="nv">$genExeName</span><span class="p">)</span>
+
+
+<span class="n">write</span> <span class="s1">&#39;&gt;&gt;&gt; 3. dotnet pack &lt;&lt;&lt;&#39;</span>
+<span class="n">rm</span> <span class="s1">&#39;obj&#39;</span> <span class="n">-Force</span> <span class="n">-Recurse</span>
+<span class="n">dotnet</span> <span class="n">restore</span> <span class="nv">$genNuget</span>
+<span class="n">dotnet</span> <span class="n">pack</span> <span class="p">-</span><span class="n">-output</span> <span class="nv">$nugetPath</span> <span class="n">-c</span> <span class="n">Release</span> <span class="nv">$genNuget</span>
+
+<span class="n">write</span> <span class="s1">&#39;&gt;&gt;&gt; 4. all files =&gt; zip &lt;&lt;&lt;&#39;</span>
+
+<span class="n">mkdir</span> <span class="nv">$ResultPath</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span>
+<span class="n">Compress-Archive</span> <span class="n">-Path</span> <span class="p">(</span><span class="nv">$nugetPath</span> <span class="p">+</span> <span class="s1">&#39;/&#39;</span> <span class="p">+</span> <span class="nv">$genExeName</span><span class="p">),</span> <span class="p">(</span><span class="nv">$nugetPath</span> <span class="p">+</span> <span class="s1">&#39;/&#39;</span> <span class="p">+</span> <span class="nv">$genNugetName</span><span class="p">)</span> <span class="n">-DestinationPath</span> <span class="p">(</span><span class="nv">$ResultPath</span> <span class="p">+</span> <span class="s1">&#39;/&#39;</span> <span class="p">+</span> <span class="nv">$zip</span><span class="p">)</span> <span class="n">-Force</span>
+
+<span class="n">rm</span> <span class="n">-Force</span> <span class="n">-Recurse</span> <span class="nv">$nugetPath</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span>
+
+<span class="n">write</span> <span class="s2">&#34;&gt;&gt;&gt; 5. success! you can find zip file in </span><span class="p">$(</span><span class="nv">$ResultPath</span> <span class="p">+</span> <span class="s1">&#39;\&#39;</span> <span class="p">+</span> <span class="nv">$zip</span><span class="p">)</span><span class="s2"> &lt;&lt;&lt;&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+
   </section>
 
   <section>
@@ -290,6 +393,7 @@
 <li><a href="#调整项目配置-1">调整项目配置</a></li>
 <li><a href="#打包nuget">打包nuget</a></li>
 </ul></li>
+<li><a href="#打包脚本">打包脚本</a></li>
 </ul></li>
 </ul>
 </nav>
