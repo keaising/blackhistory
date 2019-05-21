@@ -39,5 +39,14 @@
       <description>这是 CLI App in C# 系列的 第一篇 (Wa Da Keng) 写这个系列的目的是介绍用C#写一个命令行工具的所有内容，从规划、选型、</description>
     </item>
     
+    <item>
+      <title>处理dotnet core Redis超时异常</title>
+      <link>http://shuxiao.wang/posts/stackexchange-redis-timeout/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://shuxiao.wang/posts/stackexchange-redis-timeout/</guid>
+      <description>压力测试过程中遇到的一个问题，框架是asp.net core 2.2，redis组件是StackExchang</description>
+    </item>
+    
   </channel>
 </rss>

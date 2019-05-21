@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  sample &ndash; 流水沉微
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="#高亮代码和显示代码行数 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 [Option(ShortName = &amp;#34;l&amp;#34;, LongName = &amp;#34;eighteen&amp;#34;, ShowInHelpText = true, Description = &amp;#34;18位身|Hacking to the world">
+    
+
+    <meta name="apple-mobile-web-app-title" content="流水沉微">
+    
+    
+    <link rel="icon" href="/favicon-64.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" size="any" href="/pinned-icon.svg">
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="http://shuxiao.wang">
+    流水沉微
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/posts/">
+      
+      <span>Posts</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/">
+      
+      <span>About</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">sample</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2019-05-20. Published at: 2019-05-14.">
+        
+          Lastmod: 2019-05-20
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+<article>
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <p>#高亮代码和显示代码行数</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="hl"><span class="lnt">199
+</span></span><span class="hl"><span class="lnt">200
+</span></span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="hl"><span class="lnt">207
+</span></span><span class="hl"><span class="lnt">208
+</span></span><span class="hl"><span class="lnt">209
+</span></span><span class="hl"><span class="lnt">210
+</span></span><span class="hl"><span class="lnt">211
+</span></span><span class="hl"><span class="lnt">212
+</span></span><span class="hl"><span class="lnt">213
+</span></span><span class="hl"><span class="lnt">214
+</span></span><span class="hl"><span class="lnt">215
+</span></span><span class="lnt">216
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="hl"><span class="na">[Option(ShortName = &#34;l&#34;, LongName = &#34;eighteen&#34;, ShowInHelpText = true, Description = &#34;18位身份证号&#34;)]</span>
+</span><span class="hl"><span class="k">public</span> <span class="kt">bool</span> <span class="n">Long</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span><span class="na">
+</span></span><span class="na">
+</span><span class="na">[Option(&#34;-s|--fifteen&#34;, Description = &#34;15位身份证号&#34;)]</span>
+<span class="k">public</span> <span class="kt">bool</span> <span class="n">Short</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="k">public</span> <span class="k">void</span> <span class="n">OnExecute</span><span class="p">(</span><span class="n">IConsole</span> <span class="n">console</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="hl">        <span class="n">console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">StartWith</span><span class="p">);</span>
+</span><span class="hl">        <span class="k">if</span> <span class="p">(</span><span class="n">Long</span><span class="p">)</span>
+</span><span class="hl">	<span class="p">{</span>
+</span><span class="hl">		<span class="n">console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">genId</span><span class="p">());</span>
+</span><span class="hl">	<span class="p">}</span>
+</span><span class="hl">	<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">Short</span><span class="p">)</span>
+</span><span class="hl">	<span class="p">{</span>
+</span><span class="hl">		<span class="n">console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Short&#34;</span><span class="p">);</span>
+</span><span class="hl">	<span class="p">}</span>
+</span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<ruby>
+    深表悲痛 <rp> (</rp><rt>Xi Wen Le Jian</rt><rp>) </rp>
+</ruby>
+
+
+<ruby>
+    My heart is broken. <rp> (</rp><rt>I&#39;m happy for that.</rt><rp>) </rp>
+</ruby>
+
+
+  </section>
+
+  <section>
+    
+      
+    
+  </section>
+</article>
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>sample</b>
+      
+    </div>
+  
+
+  
+    <div>
+      
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    &copy;keaising 2014 - 2019 &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+  </body>
+</html>
