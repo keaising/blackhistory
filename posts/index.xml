@@ -26,7 +26,7 @@
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://shuxiao.wang/posts/cli-app-in-csharp2/</guid>
-      <description>这是 CLI App in C# 系列的第二篇，本篇主要介绍gen的开发过程。 新建项目 在合适的地方使用dotnet new console -n g</description>
+      <description>这是 CLI App in C# 系列的第二篇，本篇主要介绍gen的开发过程。教程里的所有代码参见keaising/gen</description>
     </item>
     
     <item>
